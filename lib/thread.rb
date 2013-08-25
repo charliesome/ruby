@@ -179,6 +179,11 @@ class Queue
   alias enq push
 
   #
+  # Alias of push
+  #
+  alias <- push
+
+  #
   # Retrieves data from the queue.  If the queue is empty, the calling thread is
   # suspended until data is pushed onto the queue.  If +non_block+ is true, the
   # thread isn't suspended, and an exception is raised.
@@ -215,6 +220,11 @@ class Queue
   # Alias of pop
   #
   alias deq pop
+
+  #
+  # Alias of pop
+  #
+  alias <-@ pop
 
   #
   # Returns +true+ if the queue is empty.
