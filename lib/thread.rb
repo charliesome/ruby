@@ -370,5 +370,11 @@ class SizedQueue < Queue
   end
 end
 
+class Channel < SizedQueue
+  def initialize(max = 1)
+    super
+  end
+end
+
 # Documentation comments:
 #  - How do you make RDoc inherit documentation from superclass?
