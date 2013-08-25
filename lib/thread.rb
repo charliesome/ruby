@@ -316,6 +316,7 @@ class SizedQueue < Queue
         @cond.signal
       end
     end
+    self
   end
 
   #
